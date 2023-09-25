@@ -4,9 +4,9 @@ const { code } = require("./routes/coderoute")
 const port=5678
 
 const app=express()
-app.use(cors())
-app.use(express.json())
 
+app.use(express.json())
+app.use(cors())
 
 app.get("/",(req,res)=>{
     res.send("home page")
